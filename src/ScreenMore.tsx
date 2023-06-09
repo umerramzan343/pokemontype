@@ -383,12 +383,12 @@ export function ScreenMore({
         </p>
 
         <p>
-          pkmn.help &copy; 2013&ndash;{year}{" "}
+          pkmn.help &copy; 2001&ndash;{year}{" "}
           <a
             className="br1 underline fg-link focus-outline"
             href="https://www.wavebeem.com"
           >
-            Brian Mock
+            iomer
           </a>
           .
         </p>
