@@ -5,7 +5,7 @@ import lchPlugin from "colord/plugins/lch";
 extend([a11yPlugin, lchPlugin]);
 
 const typeColors = {
-  normal: "#9fa19f",
+  normal: "#5060e1",
   fighting: "#ff8000",
   flying: "#81b9ef",
   poison: "#9141cb",
