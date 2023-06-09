@@ -23,7 +23,7 @@ const typeColors = {
   dragon: "#5060e1",
   dark: "#50413f",
   fairy: "#ef70ef",
-  none: "#808080",
+  none: "#5060e1",
 } as const;
 
 export function typeColor(key: keyof typeof typeColors): string {
