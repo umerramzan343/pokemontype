@@ -6,11 +6,11 @@ extend([a11yPlugin, lchPlugin]);
 
 const typeColors = {
   normal: "#5060e1",
-  fighting: "#ff8000",
-  flying: "#81b9ef",
-  poison: "#9141cb",
-  ground: "#915121",
-  rock: "#afa981",
+  fighting: "#5060e1",
+  flying: "#5060e1",
+  poison: "#5060e1",
+  ground: "#5060e1",
+  rock: "#5060e1",
   bug: "#91a119",
   ghost: "#704170",
   steel: "#60a1b8",
