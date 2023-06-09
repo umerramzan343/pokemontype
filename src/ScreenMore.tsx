@@ -356,11 +356,11 @@ export function ScreenMore({
         <p>
           Pokémon &copy; 2002&ndash;{year} Pokémon. &copy; 1995&ndash;{year}{" "}
           Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon
-          character names are trademarks of Nintendo.
+          character names are trademarks of Nintendo. 2001
         </p>
 
         <p>
-          No copyright or trademark infringement is intended in using Pokémon
+          Ions No copyright or trademark infringement is intended in using Pokémon
           content on this page.
         </p>
 
