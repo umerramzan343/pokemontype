@@ -46,7 +46,7 @@ export function ScreenMore({
           </span>
           <Button
             className="ml3"
-            size="small"
+            size="large"
             type="button"
             onClick={updateApp}
           >
