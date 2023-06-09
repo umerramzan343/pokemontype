@@ -1,0 +1,12 @@
+dist/
+node_modules/
+.vscode/
+
+/bundle.*
+/favicon-*.png
+/*.csv
+
+.DS_Store
+
+.env.local
+.env.*.local
