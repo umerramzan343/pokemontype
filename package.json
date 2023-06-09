@@ -1,7 +1,7 @@
 {
   "private": true,
   "version": "0.0.0",
-  "name": "pkmn.help",
+  "name": "pkmn.com",
   "description": "Pokémon type calculator",
   "scripts": {
     "merge-data": "ts-node ./bin/merge-data.ts",
