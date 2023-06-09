@@ -46,7 +46,7 @@ export function ScreenMore({
           </span>
           <Button
             className="ml3"
-            size="large"
+            size="small"
             type="button"
             onClick={updateApp}
           >
@@ -88,7 +88,7 @@ export function ScreenMore({
             email: (
               <a
                 className="br1 underline fg-link focus-outline"
-                href="mailto:pkmn@wavebeem.com"
+                href="mailto:iome@wavebeem.com"
               />
             ),
           }}
