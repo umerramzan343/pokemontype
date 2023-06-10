@@ -1,6 +1,6 @@
 :root {
-  --color-bg1: hsl(0 0% 100%);
-  --color-bg2: hsl(0 0% 96%);
+  --color-bg1: hsl(0, 0%, 100%);
+  --color-bg2: hsl(0, 0%, 99%);
   --color-bg3: hsl(0 0% 90%);
   --color-fg1: hsl(0 0% 7%);
   --color-fg2: hsl(0 0% 20%);
