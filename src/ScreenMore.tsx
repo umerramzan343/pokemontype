@@ -28,9 +28,45 @@ export function ScreenMore({
   const year = new Date().getFullYear();
 
   return (
+    <main className="pa3 center content-narrow lh-copy">
+      <div
+        hidden={!needsAppUpdate}
+        className={classNames([
+          "button-shadow",
+          "bg1 fg1",
+          "border2 ba br2",
+          "pa3",
+          "center",
+          "flex flex-column gap1",
+        ])}
+      >
+        <div className="flex gap1">
+          <span className="flex flex-auto items-center">
+            {t("banners.updateReady.description")}
+          </span>
+          <Button
+            className="ml3"
+            size="small"
+            type="button"
+            onClick={updateApp}
+          >
+            {t("banners.updateReady.update")}
+          </Button>
+        </div>
+        <div role="presentation" className="mv2 bt border3" />
+        <div>
+          <a
+            href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md"
+            className="br1 underline fg-link focus-outline"
+          >
+            {t("banners.updateReady.whatsNew")}
+          </a>
+        </div>
+      </div>
 
 
-   
+
+      <div role="presentation" className="mv2 bt border3" />
 
       <h2 className="lh-title f4">{t("more.settings.heading")}</h2>
 
@@ -115,44 +151,6 @@ export function ScreenMore({
         </Select>
       </div>
 
-      <div role="presentation" className="mv2 bt border3" />
-
-      <CollapsibleSection
-        heading={
-          <h2 className="lh-title f4 dib">{t("more.changes.heading")}</h2>
-        }
-      >
-        <p>
-          <Trans
-            i18nKey="more.changes.description"
-            components={{
-              changelog: (
-                <a
-                  href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md"
-                  className="br1 underline fg-link focus-outline"
-                />
-              ),
-            }}
-          />
-        </p>
-      </CollapsibleSection>
-
-      <div role="presentation" className="mv2 bt border3" />
-
-      <CollapsibleSection
-        heading={<h2 className="lh-title f4 dib">{t("more.help.heading")}</h2>}
-      >
-        <div className="mv3">
-          <Button onClick={resetApp}>
-            {t("more.help.serviceWorker.button")}
-          </Button>
-        </div>
-
-        <p>{t("more.help.serviceWorker.description")}</p>
-      </CollapsibleSection>
-
-      <div role="presentation" className="mv2 bt border3" />
- 
     </main>
   );
 }
