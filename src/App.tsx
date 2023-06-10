@@ -132,37 +132,7 @@ export function App() {
           <meta name="theme-color" content={themeColor} />
           <title>{t("title")}</title>
         </Helmet>
-        <h1 className={`f3-ns f4 tc relative white ${styles.header}`}>
-          <Link to="/" className="no-underline white focus-outline br1">
-            {t("title")}
-          </Link>
-          <div
-            className={styles.headerButton}
-            onClick={(event) => {
-              event.preventDefault();
-              const i = Math.floor(Math.random() * AllPokemon.length);
-              const pkmn = AllPokemon[i];
-              if (!pkmn) return;
-              setEasterEgg(pkmn);
-            }}
-          />
-          {easterEgg && (
-            <div
-              className={styles.easterEgg}
-              data-animate={easterEggLoadedID === easterEgg.id}
-            >
-              <MonsterImage
-                pokemonID={easterEgg.id}
-                types={easterEgg.types}
-                imageType={easterEgg.imageType}
-                onLoad={({ pokemonID }) => {
-                  setEasterEggLoadedID(pokemonID);
-                }}
-                scale={2}
-              />
-            </div>
-          )}
-        </h1>
+        
         <nav className={`bg1 bb border2 ${styles.tabBar} pb2 ph2`}>
           <NavLink
             className={tabClass}
