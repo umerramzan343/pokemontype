@@ -346,53 +346,7 @@ export function ScreenMore({
         </p>
       </CollapsibleSection>
 
-      <div role="presentation" className="mv2 bt border3" />
-
-      <CollapsibleSection
-        heading={
-          <h2 className="lh-title f4 dib">{t("more.legalInfo.heading")}</h2>
-        }
-      >
-        <p>
-          Pokémon &copy; 2002&ndash;{year} Pokémon. &copy; 1995&ndash;{year}{" "}
-          Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon
-          character names are trademarks of Nintendo. 2001
-        </p>
-
-        <p>
-          Ions No copyright or trademark infringement is intended in using Pokémon
-          content on this page.
-        </p>
-
-        <p>
-          Pokédex data is from {}
-          <a
-            className="br1 underline fg-link focus-outline"
-            href="https://pokeapi.co/"
-          >
-            PokéAPI
-          </a>
-          {" & "}
-          <a
-            className="br1 underline fg-link focus-outline"
-            href="https://pokemondb.net/"
-          >
-            Pokémon Database
-          </a>
-          .
-        </p>
-
-        <p>
-          pkmn.help &copy; 2001&ndash;{year}{" "}
-          <a
-            className="br1 underline fg-link focus-outline"
-            href="https://www.wavebeem.com"
-          >
-            iomer
-          </a>
-          .
-        </p>
-      </CollapsibleSection>
+    
     </main>
   );
 }
