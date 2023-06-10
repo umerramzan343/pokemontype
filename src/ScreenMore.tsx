@@ -28,74 +28,9 @@ export function ScreenMore({
   const year = new Date().getFullYear();
 
   return (
-    <main className="pa3 center content-narrow lh-copy">
-      <div
-        hidden={!needsAppUpdate}
-        className={classNames([
-          "button-shadow",
-          "bg1 fg1",
-          "border2 ba br2",
-          "pa3",
-          "center",
-          "flex flex-column gap1",
-        ])}
-      >
-        <div className="flex gap1">
-          <span className="flex flex-auto items-center">
-            {t("banners.updateReady.description")}
-          </span>
-          <Button
-            className="ml3"
-            size="small"
-            type="button"
-            onClick={updateApp}
-          >
-            {t("banners.updateReady.update")}
-          </Button>
-        </div>
-        <div role="presentation" className="mv2 bt border3" />
-        <div>
-          <a
-            href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md"
-            className="br1 underline fg-link focus-outline"
-          >
-            {t("banners.updateReady.whatsNew")}
-          </a>
-        </div>
-      </div>
 
-      <h2 className="lh-title f4">{t("more.contact.heading")}</h2>
 
-      <p>
-        <Trans
-          i18nKey="more.contact.intro"
-          values={{}}
-          components={{
-            homepage: (
-              <a
-                href="https://www.wavebeem.com"
-                className="br1 underline fg-link focus-outline"
-              />
-            ),
-          }}
-        />
-      </p>
-
-      <p>
-        <Trans
-          i18nKey="more.contact.email"
-          components={{
-            email: (
-              <a
-                className="br1 underline fg-link focus-outline"
-                href="mailto:iome@wavebeem.com"
-              />
-            ),
-          }}
-        />
-      </p>
-
-      <div role="presentation" className="mv2 bt border3" />
+   
 
       <h2 className="lh-title f4">{t("more.settings.heading")}</h2>
 
